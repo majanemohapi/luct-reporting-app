@@ -1,11 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Note the 'client' here
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom'; // ADD THIS LINE
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter basename="/luct-reporting-app"> {/* ADD THIS LINE */}
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
