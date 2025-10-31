@@ -1,11 +1,15 @@
 import React, { useState } from 'react';
 import { Link, Route, Routes, useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 import Classes from './Classes';
 import Courses from './Courses';
 import Monitoring from './Monitoring';
 import Rating from './Rating';
+import Lectures from './Lectures';
 import Reports from './Reports';
+
+
 
 const PLDashboard = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -36,7 +40,7 @@ const PLDashboard = () => {
       justifyContent: 'space-between',
       alignItems: 'center',
       padding: '20px 40px',
-      backgroundColor: '#ccc',
+      backgroundColor: '#fff',
       boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
       position: 'sticky',
       top: 0,
@@ -196,6 +200,7 @@ const PLDashboard = () => {
         </div>
         <div style={{ backgroundColor: '#fff', padding: '30px', borderRadius: '10px', boxShadow: '0 2px 4px rgba(0,0,0,0.1)' }}>
           <Routes>
+            <Route path="Lectures" element={<Lectures />} />
             <Route path="classes" element={<Classes />} />
             <Route path="courses" element={<Courses />} />
             <Route path="monitoring" element={<Monitoring />} />

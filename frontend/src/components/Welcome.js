@@ -202,7 +202,7 @@ const Welcome = () => {
         <nav style={styles.centerNav}>
           <Link to="/student" style={styles.centerLink}>HOME</Link>
           <Link to="/lecturer" style={styles.centerLink}>RATE</Link>
-          <Link to="/prl" style={styles.centerLink}>CTRATIVITY</Link>
+          <Link to="/prl" style={styles.centerLink}>CREATIVITY</Link>
           <Link to="/pl" style={styles.centerLink}>INNOVATION</Link>
         </nav>
         <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
