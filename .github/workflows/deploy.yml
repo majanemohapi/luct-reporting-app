@@ -18,7 +18,7 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: cd frontend && npm install
+        run: cd frontend && npm ci  # Use 'ci' for cleaner install
 
       - name: Build App
         run: cd frontend && npm run build
@@ -28,3 +28,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./frontend/build
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
