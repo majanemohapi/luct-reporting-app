@@ -3,11 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://majanemohapi.github.io/luct-reporting-app",
+  "homepage": "https://majanemohapi.github.io/reporting-app",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "keywords": [],
@@ -17,6 +19,7 @@
     "axios": "^1.12.2",
     "bootstrap": "^5.3.8",
     "chart.js": "^4.5.0",
+    "gh-pages": "^6.3.0",
     "jwt-decode": "^4.0.0",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
